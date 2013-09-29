@@ -1,6 +1,6 @@
 /*
  * Jakefile
- * JSONPredicateKit
+ * JSLiteralKit
  *
  * Created by Udo Schneider on September 22, 2013.
  *
@@ -79,7 +79,7 @@ var stream = require("narwhal/term").stream,
     framework = require("cappuccino/jake").framework,
     browserEnvironment = require("objective-j/jake/environment").Browser,
     configuration = ENV["CONFIG"] || ENV["CONFIGURATION"] || ENV["c"] || "Debug",
-    productName = "JSONPredicateKit",
+    productName = "JSLiteralKit",
     buildPath = FILE.canonical(FILE.join(buildDir, productName + ".build")),
     packageFrameworksPath = FILE.join(SYS.prefix, "packages", "cappuccino", "Frameworks"),
     debugPackagePath = FILE.join(packageFrameworksPath, "Debug", productName);

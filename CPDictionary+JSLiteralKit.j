@@ -1,4 +1,6 @@
-@implementation CPDictionary (JSONDictionary)
+@import <Foundation/CPDictionary.j>
+
+@implementation CPDictionary (JSLiteralKit)
 
 - (JSObject)toJSObject
 {

@@ -1,4 +1,6 @@
-@implementation CPArray (JSONArray)
+@import <Foundation/CPArray.j>
+
+@implementation CPArray (JSLiteralKit)
 
 - (JSObject)toJSObject
 {

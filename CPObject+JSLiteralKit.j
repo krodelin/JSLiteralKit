@@ -1,4 +1,6 @@
-@implementation CPObject (JSONObject)
+@import <Foundation/CPObject.j>
+
+@implementation CPObject (JSLiteralKit)
 
 - (JSObject)toJSObject
 {
