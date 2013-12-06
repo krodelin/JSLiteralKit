@@ -13,10 +13,11 @@
 
 + (CPObject)fromJSObject:(JSObject)obj
 {
-        for (var i = 0; i < obj.length; i++) {
-                obj[i] = [CPObject fromJSObject:obj[i]];
-   }
-   return obj;
+	var result = [[CPDictionary alloc] init];
+    for(var key in obj) {
+    	[result setObject:[CPObject fromJSObject:obj[key]] forKey:key];
+    }
+    return result;
 }
 
 
