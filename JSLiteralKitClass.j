@@ -36,7 +36,7 @@
 */
 @implementation JSLiteralKit : CPObject
 
-+ (CPString)version
++ (int)version
 {
     var bundle = [CPBundle bundleForClass:[self class]];
 
