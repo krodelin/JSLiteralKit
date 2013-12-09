@@ -14,8 +14,11 @@
     if (obj instanceof Array)
         return [CPArray fromJSObject:obj];
 
+    if (obj instanceof CFDictionary)
+        return obj;
+
     var type = typeof obj;
-    if (type == 'string' || type == 'boolean' || type == 'number')
+    if (type == 'string' || type == 'boolean' || type == 'number' || obj instanceof CFDictionary)
         return obj;
 
     return [CPDictionary fromJSObject:obj];
